@@ -9,21 +9,6 @@ export function createhome(){
     addtext()
 }
 
-// function addvideo(){
-//     const videotag = document.createElement("video")
-//     videotag.classList.add("vid")
-//     videotag.setAttribute("autoplay","");
-//     videotag.loop=true;
-//     videotag.muted= true;
-
-//     const sourcetag = document.createElement("source")
-//     sourcetag.src= videoUrl
-
-    
-//     main.appendChild(videotag)
-//     videotag.appendChild(sourcetag)
-// }
-
 function addtext(){
     const hometextcont = document.createElement("div")
     hometextcont.classList.add("hometextcont")
