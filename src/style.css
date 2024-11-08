@@ -9,40 +9,41 @@ header{
     background-image: url("colorheader.svg");
     position: absolute;
     width: 100vw;
-    height: 120px;
+    height: 135px;
     z-index: 20;
+    transform: translateY(-300px);
     background-size: contain;
-    background-repeat: repeat;
-
+    background-repeat: repeat-x;
+    animation: headerani 1s ease-out forwards;
+}
+@keyframes headerani{
+    0%{
+        transform: translateY(-300px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 nav{
-    
-    
     width: 100vw;
     display: flex;
     position: fixed;
     justify-content: space-around;
 }
 .homebtn{
-    background-image: url(Images/Homefolder/HOMEIMG.png);
-    width: 217px;
-    height: 160px;
-    background-size: contain;
-    background-repeat: no-repeat; 
+    background-image: url(Images/Homefolder/HOMEIMG.png); 
 }
 .menubtn{
     background-image: url(Images/Menufolder/MENUIMG.png);
-    width: 217px;
-    height: 160px;
-    background-size: contain;
-    background-repeat: no-repeat; 
 }
 .aboutbtn{
     background-image: url(Images/Aboutfolder/ABOUTIMG.png);
-    width: 217px;
-    height: 160px;
+}
+.navbtn{
+    width: 170px;
+    height: 110px;
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 .navbtn:hover{
     animation: dingle 0.5s ease-in;
@@ -87,14 +88,73 @@ body{
     flex-direction: column;
     position: relative;
     height: 100vh;
-    z-index: 10;
+    z-index: 12;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
     font-size: 150px;
     color:  rgb(255, 255, 255);
     font-family: "Italianno", cursive;
-    
+    transform: translateY(20px);
+    animation: textanim 1s ease-out forwards;
     
 }
+@keyframes textanim {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
 
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.mainmenu{
+    background-image: url("Images/Menufolder/backgroundmenu.jpg");
+    position: relative;
+    background-repeat: repeat;
+    width: 70vw;
+    height: 100vh;
+    background-size:contain;
+    z-index: 16;
+    transform: translateY(-1000px);
+    animation: bottomtop 1s ease-out forwards;
+}
+@keyframes bottomtop {
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.droplet{
+    position: absolute;
+    width: 150vw;
+    height: 100vh;
+    z-index: 14;
+    background-image: url("Images/Menufolder/yellowdroplet.png");
+    background-size: contain;
+    transform: translateY(-500px);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: droplet 0.7s ease-out forwards;
+    background-repeat: repeat-x;
+
+}
+@keyframes droplet {
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
