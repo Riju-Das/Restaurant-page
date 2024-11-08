@@ -14,7 +14,6 @@ videotag1.classList.add("vid")
 videotag1.setAttribute("autoplay","");
 videotag1.loop=true;
 videotag1.muted= true;
-videotag1.preload = "auto";
 videotag1.style.zIndex = "10"
 videotag1.disablePictureInPicture = true;
 
@@ -24,7 +23,6 @@ videotag2.classList.add("vid")
 videotag2.setAttribute("autoplay","");
 videotag2.loop=true;
 videotag2.muted= true;
-videotag2.preload = "auto"; 
 videotag2.style.zIndex = "8"
 videotag2.style.display="none"
 videotag2.disablePictureInPicture = true;
