@@ -138,7 +138,7 @@ function thirddiv(aboutcont){
 
     const hours = document.createElement("div")
     hours.classList.add("hours")
-    hours.innerHTML = "<ul><li>Mon - Wed, 8 am - 10 pm</li><li>Thu - Sat, 8 am - 11 pm</li><li>Closed Sundays<li></ul>"
+    hours.innerHTML = "<ul><li>Mon - Wed, 8 am - 10 pm</li><li>Thu - Sat, 8 am - 11 pm</li></ul>"
 
 
     thirddivcont.appendChild(locationcont)
