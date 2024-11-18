@@ -8,7 +8,7 @@
 }
 
 header{
-    background-image: url("colorheader.svg");
+    background-image: url("colorheader.png");
     position: absolute;
     width: 100vw;
     height: 135px;
@@ -147,7 +147,7 @@ body{
 .formcont {
     font-family: "Baloo Bhai 2";
     position: absolute;
-    width: 25vw;
+    width: 20vw;
     max-height: 80vh;
     margin: 0 auto;
     padding: 20px;
@@ -188,6 +188,7 @@ body{
     padding: 8px;
     border: 1px solid #1a1a1a;
     border-radius: 4px;
+    margin-bottom: 25px;
 }
 
 .formcont button {
@@ -199,11 +200,11 @@ body{
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    }
+}
 
 .formcont button:hover {
-background-color: #ffffff;
-color: black;
+    background-color: #ffffff;
+    color: black;
 }
 .crossbtn{
     position: absolute;
@@ -212,6 +213,38 @@ color: black;
     font-size: 30px;
     top: 0px;
     cursor: pointer;
+
+}
+@media screen and (max-width: 1280px) {
+    .formcont {
+        font-family: "Baloo Bhai 2";
+        position: absolute;
+        width: 30vw;
+        max-height: 70vh;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fd9800;
+        
+        animation: formanim 0.3s ease-out forwards;
+        
+    }
+
+    .formcont input[type="text"],
+    .formcont input[type="email"],
+    .formcont input[type="tel"],
+    .formcont input[type="date"],
+    .formcont input[type="time"],
+    .formcont input[type="number"] {
+        padding: 5px;
+        border: 1px solid #1a1a1a;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+
 
 }
 .main{
@@ -384,14 +417,12 @@ h1 {
 
 }
 .aboutheading{
-    
-    
     font-family: "Poppins", serif;
     font-size: 2.5rem;
     font-weight: bold;
 }
 .aboutwriting{
-    width: 80vw;
+    width: 70vw;
     font-family: "Dancing Script", serif;
     font-optical-sizing: auto;
     font-size: 28px;
@@ -431,9 +462,11 @@ h1 {
 }
 
 .cheftext{
-    text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
     font-size: 50px;
+    
     width: 100vw;
     color: white;
     width: 90vw;
@@ -487,7 +520,8 @@ h1 {
     transition-timing-function: ease-out;
 }
 .aboutthirddiv{
-    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(24, 24, 24));
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(39, 39, 39));
+
     height: 800px;
     width: 100vw;
     display: flex;
@@ -496,6 +530,7 @@ h1 {
 
 }
 .locationtext{
+    font-weight: bold;
     font-size: 50px;
     color: white;
     font-family: "Poppins";
@@ -522,6 +557,7 @@ h1 {
 
 }
 .contacttext{
+    font-weight: bold;
     font-size: 50px;
     
 
@@ -529,7 +565,7 @@ h1 {
 }
 .contacts ul{
     font-size: 16px;
-    
+    font-weight:lighter;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -538,6 +574,7 @@ h1 {
     list-style: none;
 }
 .hourstext{
+    font-weight: bold;
     font-size: 50px;
     
     display: flex;
@@ -546,6 +583,7 @@ h1 {
 
 }
 .hours ul{
+    font-weight:lighter;
     font-size: 16px;
     
     display: flex;

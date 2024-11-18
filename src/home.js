@@ -78,7 +78,7 @@ function bookatablefunction(main){
 
         form.appendChild(label);
         form.appendChild(input);
-        form.appendChild(document.createElement('br'));
+        
     });
 
     
