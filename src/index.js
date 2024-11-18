@@ -1,12 +1,16 @@
 import "./style.css";
 import video1 from "./video1.mp4";
 import video2 from "./video2.mp4";
+
 import { createhome } from "./home";
 import { createmenu } from "./menu";
+import { createabout } from "./about";
+
 
 const content = document.querySelector("#content")
 const menubtn = document.querySelector(".menubtn")
 const homebtn = document.querySelector(".homebtn")
+const aboutbtn = document.querySelector(".aboutbtn")
 const main = document.querySelector(".main")
 
 const videotag1 = document.createElement("video")
@@ -90,5 +94,11 @@ homebtn.addEventListener("mouseover",()=>{
     videotag2.style.display="none"
     videotag1.style.zIndex = "10"
     videotag2.style.zIndex = "8"
+    
+})
+
+aboutbtn.addEventListener("click",()=>{
+    main.innerHTML= " "
+    createabout()
     
 })
