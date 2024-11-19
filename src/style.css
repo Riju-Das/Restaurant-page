@@ -538,11 +538,10 @@ h1 {
 }
 .aboutthirddiv{
     background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(39, 39, 39));
-
-    height: 800px;
+    
     width: 100vw;
     display: flex;
-
+    padding-bottom: 60px;
 
 }
 .locationtext{
@@ -569,6 +568,7 @@ h1 {
     color: white;
     font-family: "Poppins";
     gap: 150px;
+    
     
 
 }
@@ -687,7 +687,6 @@ h1 {
     }
     .aboutthirddiv{
         flex-direction: column;
-        height: 550px;
         margin: 0;
         padding-bottom: 0px;
     }
@@ -703,8 +702,9 @@ h1 {
         flex-direction: row;
         gap: 10px;
         width: 100vw;
-        height: 30vh;
+        height: 20vh;
         margin-top: 20px;
+
         align-items: start;
         justify-content: space-evenly;
     }
