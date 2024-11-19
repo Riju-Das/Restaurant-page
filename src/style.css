@@ -519,14 +519,16 @@ h1 {
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
+.locationcont{
+    padding-left: 5%;
+}
 .aboutthirddiv{
     background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(39, 39, 39));
 
     height: 800px;
     width: 100vw;
     display: flex;
-    padding-left: 5%;
-    padding-right: 5%;
+
 
 }
 .locationtext{
@@ -594,4 +596,121 @@ h1 {
 .hours ul li{
     
     list-style: none;
+}
+
+@media (orientation: portrait){
+    .hometextcont{
+        font-size: 4rem;
+    }
+    .formcont {
+        width: 50vw;
+        
+    }
+    .myrestimg{
+        width: 70vw;
+        height: 20vh;
+
+        
+        
+    }
+    .firstdivabout{
+        margin-top: 100px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .aboutheading{
+        font-family: "Poppins", serif;
+        font-size: 1rem;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aboutwriting{
+        padding-top: 5px;
+        width: 70vw;
+        font-family: "Dancing Script", serif;
+        font-optical-sizing: auto;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .cheftext{
+        margin-top: 50px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        font-size: 1.3rem;
+        
+        width: 100vw;
+        color: white;
+        width: 90vw;
+        height: 50px;
+        font-family: "Poppins";
+    }
+    .chefimg{
+        width: 70px;
+        height: 70px;
+    }
+    .chefname{
+        font-size: 1rem;
+    }
+    .chefflex{
+        align-items: center;
+    }
+    .chefcont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutchefcont{
+        gap: 20px;
+        height: 300px;
+    }
+    .aboutthirddiv{
+        flex-direction: column;
+        height: 600px;
+    }
+    .location{
+        width: 90vw;
+        height: 40vh;
+    }
+    .locationtext{
+        font-size: 1.3rem;
+    }
+
+    .contactcont{
+        flex-direction: row;
+        gap: 10px;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 20px;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+    .contacttext{
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hourstext{
+        font-size: 1.3rem;
+    }
+    li{
+        font-size: 0.7rem;
+    }
+    .appetizers-container {
+        margin-top: 100px;
+        width: 600px;
+        margin-bottom: 50px;
+    }
+    .mainmenu{
+        
+        height: 100vh;
+    }
+
+    
 }
